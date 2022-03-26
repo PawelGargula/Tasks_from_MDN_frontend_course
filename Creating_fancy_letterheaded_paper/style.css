@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+
+  /* Callback for older browsers, add image on top with no-repeat declaration */
+  background-image: url(/top-image.png);
+  background-position: top;
+  background-repeat: no-repeat;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2) 0%,
+      transparent 20% 80%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(/top-image.png) no-repeat top, url(/bottom-image.png) no-repeat bottom;
+  background-color: white;
+
+  --border-top-and-bottom: 1mm solid #c91700;
+  border-top: var(--border-top-and-bottom);
+  border-bottom: var(--border-top-and-bottom);
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 126px;
+  height: 126px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-image: url(/logo.png);
+
+  /* Add border radius, so now i can add shadow around rounded logo image */
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px black;
+  -moz-box-shadow: 3px 3px 5px black;
+  -webkit-box-shadow: 3px 3px 5px black;
+  border-collapse: separate; /* Set for IE > 9 */
+}
