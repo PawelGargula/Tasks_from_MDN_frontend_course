@@ -18,7 +18,7 @@ article {
   position: relative;
 
   /* Callback for older browsers, add image on top with no-repeat declaration */
-  background-image: url(/top-image.png);
+  background-image: url(top-image.png);
   background-position: top;
   background-repeat: no-repeat;
 
@@ -27,7 +27,7 @@ article {
       transparent 20% 80%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url(/top-image.png) no-repeat top, url(/bottom-image.png) no-repeat bottom;
+    url(top-image.png) no-repeat top, url(bottom-image.png) no-repeat bottom;
   background-color: white;
 
   --border-top-and-bottom: 1mm solid #c91700;
@@ -53,7 +53,7 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
-  background-image: url(/logo.png);
+  background-image: url(logo.png);
 
   /* Add border radius, so now i can add shadow around rounded logo image */
   border-radius: 50%;
