@@ -1,45 +1,77 @@
 /* General setup */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-  }
-  
-  /* Layout */
-  
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-    width: 30%;
-  }
-  
-  nav {
-    float: left;
-    width: 20%;
-  }
-  
-  footer {
-    clear: both;
-  }
-  
-  header, section, aside, nav, footer {
-    padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: "body-font";
+  src: url("fonts/playfair-display/PlayfairDisplay-Regular.woff2")
+      format("woff2"),
+    url("fonts/playfair-display/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "heading-font";
+  src: url("fonts/raleway/Raleway-Bold.woff2") format("woff2"),
+    url("fonts/raleway/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+body {
+  font-family: "body-font", "Times New Roman", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "headsing-font", Arial, Helvetica, sans-serif;
+}
