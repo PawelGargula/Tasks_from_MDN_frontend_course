@@ -63,8 +63,16 @@ footer {
   font-weight: bold;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "body-font", "Times New Roman", serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.2rem;
 }
 
 h1,
@@ -74,4 +82,20 @@ h4,
 h5,
 h6 {
   font-family: "headsing-font", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  word-spacing: normal;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+section h2 + p {
+  text-indent: 2rem;
 }
