@@ -154,20 +154,25 @@ li {
 }
 
 /* Navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 nav li {
   background: initial;
   margin: 0;
+  padding: 0;
 }
 
 nav a {
   background-color: rgb(var(--rbg-primary-color));
-  border-radius: 0.5rem;
   color: white;
   display: block;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 nav a:link,
