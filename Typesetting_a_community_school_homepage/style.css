@@ -1,5 +1,10 @@
 /* General setup */
 
+:root {
+  --rbg-primary-color: 170, 102, 102;
+  --secondary-color: #5a7a97;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,15 +48,15 @@ footer {
 
 header,
 footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+  border-top: 5px solid rgb(var(--rbg-primary-color));
+  border-bottom: 5px solid rgb(var(--rbg-primary-color));
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+/* General styles */
 @font-face {
   font-family: "body-font";
-  src: url("fonts/playfair-display/PlayfairDisplay-Regular.woff2")
-      format("woff2"),
+  src: url("fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2"),
     url("fonts/playfair-display/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: 400;
 }
@@ -75,6 +80,7 @@ body {
   word-spacing: 0.2rem;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -96,6 +102,88 @@ h2 {
   font-size: 2rem;
 }
 
-section h2 + p {
+/* Paragraphs */
+section h2+p {
   text-indent: 2rem;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0/1.6rem;
+  padding-right: 2rem;
+}
+
+a:link {
+  color: #985b5b;
+}
+
+a:visited {
+  color: var(--secondary-color);
+}
+
+a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #0400ff;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2.4rem;
+  background: url("images/hat32x24.png") no-repeat 0 50%/1.6rem 1.2rem;
+}
+
+li {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/* Navigation */
+nav li {
+  background: initial;
+  margin: 0;
+}
+
+nav a {
+  background-color: rgb(var(--rbg-primary-color));
+  border-radius: 0.5rem;
+  color: white;
+  display: block;
+  margin: 0.3rem 0;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:link,
+nav a:visited  {
+  color: white;
+}
+
+nav a:focus {
+  background: linear-gradient(135deg, var(--secondary-color) 10%, #985b5b 10% 90%, var(--secondary-color) 90%);
+}
+
+nav a:hover {
+  background-color: rgba(var(--rbg-primary-color), 0.95);
+  box-shadow: 0.05rem 0.05rem 0.2rem black;
+}
+
+nav a:active {
+  color: black;
 }
