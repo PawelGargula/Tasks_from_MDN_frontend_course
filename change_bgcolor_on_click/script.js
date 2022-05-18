@@ -1,0 +1,1 @@
+const buttonBar = document.querySelector('.button-bar');
