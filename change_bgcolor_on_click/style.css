@@ -1,0 +1,11 @@
+.button-bar {
+    display: flex;
+    place-content: center space-around;
+    padding: 1rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
