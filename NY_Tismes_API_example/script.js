@@ -1,7 +1,7 @@
 // Defining a baseURL and key to as part of the request URL
 
 const baseURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
-const key = '6FWvhmNWsxLXbai6vPz0spdM0lvvYNGf';
+const key = 'API_Key';
 
 // Grab references to all the DOM elements you'll need to manipulate
 const searchTerm = document.querySelector('.search');
