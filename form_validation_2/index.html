@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Form validation: Task 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+    <h2>Enter your support query</h2>
+    <ul>
+      <li>
+        <label for="uname">User name:</label>
+        <input type="text" name="uname" id="uname" required minlength="5" maxlength="20" pattern="[a-z]\.(\d|[a-z]){3,}">
+        <span></span>
+      </li>
+      <li>
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9]@bigcorp.eu">
+        <span></span>
+      </li>
+      <li>
+        <label for="phone">Phone number:</label>
+        <input type="tel" name="phone" id="phone" required pattern="\d{3}(\s|\.|-)?\d{3}(\s|\.|-)?\d{4}">
+        <span></span>
+      </li>
+      <li>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" maxlength="200">
+          </textarea>
+      </li>
+      <li>
+        <button>Submit comment</button>
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>

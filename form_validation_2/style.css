@@ -1,0 +1,26 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:invalid + span::after {
+  content: "❌";
+  font-size: 80%;
+}
+
+input:valid + span::after {
+  content: "✓";
+  font-size: 100%;
+  color: rgb(0, 199, 0);
+}
