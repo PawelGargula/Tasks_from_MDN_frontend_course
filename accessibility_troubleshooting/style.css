@@ -18,7 +18,11 @@ body {
 
 /* || typography */
 
-font[size="7"], font[size="6"], font[size="5"] {
+h1, 
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
@@ -28,20 +32,28 @@ p, input, li, table, label {
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
 }
 
 p, li, table {
@@ -51,8 +63,12 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav.nav, article, footer, .secondary {
+  background-color: white;
+}
+
+nav.nav {
+  margin-bottom: 10px;
 }
 
 article, footer, .secondary {
@@ -63,7 +79,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav.nav {
   height: 50px;
   background-color: ff80ff;
   display: flex;
@@ -71,20 +87,20 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav.nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav.nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav.nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -92,7 +108,11 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav.nav a:hover {
+  text-decoration: underline;
+}
+
+nav.nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -117,6 +137,14 @@ div[class="nav"] .search {
   color: white;
 }
 
+:is(
+.search input[type="submit"], 
+.comment-form input[type="submit"],
+.show-hide
+):focus {
+  background-color: gray;
+}
+
 /* || main layout */
 
 main {
@@ -129,6 +157,10 @@ article {
 
 .secondary {
   flex: 2;
+}
+
+.secondary a:hover {
+  text-decoration: none;
 }
 
 footer {
