@@ -1,6 +1,7 @@
 /* || General setup */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -18,7 +19,7 @@ body {
 
 /* || typography */
 
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -27,7 +28,11 @@ h5 {
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
+p,
+input,
+li,
+table,
+label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
@@ -56,14 +61,19 @@ h5 {
   font-size: 1.8rem;
 }
 
-p, li, table {
+p,
+li,
+table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 /* || header layout */
 
-nav.nav, article, footer, .secondary {
+nav.nav,
+article,
+footer,
+.secondary {
   background-color: white;
 }
 
@@ -71,7 +81,9 @@ nav.nav {
   margin-bottom: 10px;
 }
 
-article, footer, .secondary {
+article,
+footer,
+.secondary {
   padding: 10px 30px;
 }
 
@@ -137,12 +149,22 @@ nav.nav .search {
   color: white;
 }
 
-:is(
-.search input[type="submit"], 
-.comment-form input[type="submit"],
-.show-hide
-):focus {
+:is(.search input[type="submit"],
+  .comment-form input[type="submit"],
+  .show-hide) {
+  cursor: pointer;
+}
+
+:is(.search input[type="submit"],
+  .comment-form input[type="submit"],
+  .show-hide):focus-visible {
   background-color: gray;
+}
+
+:is(.search input[type="submit"],
+  .comment-form input[type="submit"],
+  .show-hide):hover {
+  background: #4e4e4e;
 }
 
 /* || main layout */
@@ -175,7 +197,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
 }
 
@@ -193,7 +216,8 @@ tbody tr:nth-child(odd) {
 
 /* styling content images and audio */
 
-img, audio {
+img,
+audio {
   display: block;
   margin: 0 auto;
 }
@@ -246,12 +270,15 @@ audio {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+.comment-form input,
+.comment-form label,
+.show-hide {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
+.comment-form input[type="submit"],
+.show-hide {
   background: #333;
   border: 0;
   color: white;
