@@ -22,8 +22,10 @@ const transcription = document.querySelector('.transcription');
 showHideTranscriptionBtn.onclick = () => {
   if (transcription.classList.contains('hidden')) {
     transcription.classList.remove('hidden');
+    showHideTranscriptionBtn.textContent = 'Hide transcription';
   } else {
     transcription.classList.add('hidden');
+    showHideTranscriptionBtn.textContent = 'Show transcription';
   }
 };
 
