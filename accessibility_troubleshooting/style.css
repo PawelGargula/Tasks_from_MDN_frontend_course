@@ -217,13 +217,28 @@ tbody tr:nth-child(odd) {
 /* styling content images and audio */
 
 img,
-audio {
+audio,
+.transcription-button {
   display: block;
   margin: 0 auto;
 }
 
 audio {
   width: 500px;
+}
+
+.transcription-button {
+  margin-top: 10px;
+}
+
+.transcription {
+  text-align: center;
+}
+
+.transcription.hidden {
+  height: 0;
+  left: -100vmax;
+  position: relative;
 }
 
 /* Comments styling */

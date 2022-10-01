@@ -1,18 +1,29 @@
 // functionality for showing/hiding the comments section
 
-const showHideBtn = document.querySelector('.show-hide');
+const showHideCommentsBtn = document.querySelector('.show-hide.comments-button');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
-showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.textContent;
+showHideCommentsBtn.onclick = function() {
+  let showHideText = showHideCommentsBtn.textContent;
   if(showHideText === 'Show comments') {
-    showHideBtn.textContent = 'Hide comments';
+    showHideCommentsBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
   } else {
-    showHideBtn.textContent = 'Show comments';
+    showHideCommentsBtn.textContent = 'Show comments';
     commentWrapper.style.display = 'none';
+  }
+};
+
+const showHideTranscriptionBtn = document.querySelector('.transcription-button');
+const transcription = document.querySelector('.transcription');
+
+showHideTranscriptionBtn.onclick = () => {
+  if (transcription.classList.contains('hidden')) {
+    transcription.classList.remove('hidden');
+  } else {
+    transcription.classList.add('hidden');
   }
 };
 
